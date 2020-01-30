@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- Loading my CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font - Staatliches  ///  FIREBASE  ///  Javascript File  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script type="text/javascript" src="js_file.js"></script>
+
+    <!-- Page Title -->
+    <title>ClearExpense Project - Services</title>
+</head>
+
+<body>
+
+    <!-- Header part -->
+    <header>
+            <a id="link" href="index.html">
+                <img src="imgs/logo.png" alt="logo">
+            </a>
+
+            <form name ="login" id="loginform" action="#">
+                <label for="login">Login: </label>
+                <input type="text" name="login" id="login" placeholder="Your user..."/>
+                <label for="pw">Password: </label>
+                <input type="password" name="pw" id="pw"   placeholder="Password..."/>
+
+                <input type="button" id="loginbtn" value="Login"/>
+
+                <br>
+                <p id="line">
+                    <p id="usererror">User or password incorrect!</p>
+                    <a id="forgot" href="contact.html">Forgot your password?</a>
+                <p>
+            </form>
+    </header>
+
+    <!-- Nav part -->
+    <nav id="listcomponents">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+<!-- ####################  Begin of Content part  ####################-->
+    <div id="content">
+        <div id="area">
+            <h2>Our Services</h2>
+
+            <div id="info">
+
+                <table id="table">
+                    <tr>
+                        <th>Services</th>
+                    </tr>
+                    <tr>
+                        <td>Financial Consultancy</td>
+                        <td>We have partnerships and we can offer support for financial issues, investments and much more.</td>
+                    </tr>
+                    <tr>
+                        <td>Tax Return Assistance</td>
+                        <td>Based on your expenses, you can ask for our support for 2020 Tax Return.</td>
+                    </tr>
+                    <tr>
+                        <td>Customized Reports</td>
+                        <td>Customized reports for organization / individuals.</td>
+                    </tr>
+                    <tr>
+                        <td>Data Integration</td>
+                        <td>ClearExpenses can integrate your expense report with your ERP system.</td>
+                    </tr>
+                </table>
+
+                <img src="imgs/peoplecompany.jpeg" id="people" alt="people">
+
+            </div>
+
+            <h3>Beta Test</h3>
+            <div id="home">
+                <p>Try ClearExpenses for free and be part of our community. Start syncing your transactions today. We take care of your finances!</p>
+                <p>Access your Contact page and tell us what are your organization needs. Access our work area using a Login Account.</p>
+            </div>
+            <img src="imgs/tutorial.png" id="tutorial" alt="tutorial">
+        </div>
+    </div>
+<!-- #####################  End of Content part  #####################-->
+
+    <!-- Footer part -->
+    <footer>
+        <nav class="footerlist">
+            <ol>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About</a></li>
+            </ol>
+
+            <ol><li>Copyright © 2019 <a href="https://www.linkedin.com/in/brunoillipronti/">Illipronti, Bruno</a></li></ol>
+
+            <ol>
+                <li>Red River College @ 160 Princess St, Winnipeg, MB</li>
+                <li><a href="https://www.google.com/maps/place/Red+River+College+-+The+Roblin+Centre/@49.900184,-97.1436137,17z/data=!3m1!4b1!4m5!3m4!1s0x52ea715dbee06687:0xe064da6c408f4b3b!8m2!3d49.900184!4d-97.141425">
+                    Map
+                    </a>
+                </li>
+            </ol>
+        </nav>
+        <img src="imgs/brunologo.png" alt="bruno">
+    </footer>
+
+</body>
+
+
+</html>

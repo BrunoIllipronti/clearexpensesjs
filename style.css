@@ -1,0 +1,256 @@
+/* Background "color" loading */
+html {
+    background: url(prism.png) top left repeat ;
+}
+
+body {
+    font-family: 'Staatliches';
+    width: 800px;
+    height:100%;
+    /* height: 500px; Comment if necessary */
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    border: solid black;
+    border-width: thin;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0 0 9px gray;
+    box-shadow: 0 0 18px gray;
+}
+
+/* ######################### BEGIN OF HEADER ######################### */
+header img, form {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+}
+
+header form{  left: 200px;  }
+header a { text-decoration: none; }
+
+header input[type=text], input[type=password] {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-color: #f8f8f8;
+    width: 90px;
+    border-radius: 5px;
+}
+
+#line{
+    margin: 0;
+    display: flex;
+}
+
+#usererror, #name_error, #phone_error, #email_error {
+    float: left;
+    margin: 0;
+    color: red;
+    font-size: 11px;
+    font-family: Verdana;
+    display: none;
+}
+
+/* Forgot your password - Link Styling */
+#forgot {
+    color: red;
+    font-size: 11px;
+    font-family: Verdana;
+    float: right;
+}
+#forgot:visited { color: BlueViolet; }
+#forgot:link {  color: blue;  }
+#forgot:active { color: #0000FF; }
+/* ######################### END OF HEADER ######################### */
+
+
+
+/* ######################### BEGIN OF NAV ######################### */
+#listcomponents{  background-image: linear-gradient(#0000CD, #4169E1);  }
+
+#listcomponents ul {  margin:auto;  padding-left: 130px; }
+#listcomponents li { background: url("img/separator.png") no-repeat; }
+
+#listcomponents ul li {
+    display: inline;
+    padding: 0 4.20em;
+    text-align: right;
+}
+
+#listcomponents ul li:first-of-type {  background: none; }
+#listcomponents li a{ text-decoration: none;  color: #EDEDED; }
+#listcomponents ul li a:hover { color: #F5F5F5;  text-shadow: 1px 1px 1px white; }
+/* ######################### END OF NAV ######################### */
+
+
+
+/* ####################### BEGIN OF CONTENT ###################### */
+#content {
+    /*
+    height: 500px;
+    */
+    height:100%;
+    overflow:auto;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#area{
+    height: 500px;
+}
+
+/* Shadowing - Header 1 */
+h2, h3 {
+    font-family: Calibri;
+    text-shadow: 1px 1px 1px #000;
+    color: #4169E1;
+    padding-left: 20px;
+}
+
+#info{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+}
+
+#home{
+    padding-left: 20px;
+}
+
+#home p{
+    margin: 1px;
+    padding-top: 10px;
+}
+
+#tutorial {
+    float: right;
+}
+
+#table{
+    padding-right: 20px;
+}
+
+.fields, textarea {
+    display: block;
+    padding: 5px 15px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    resize: none;
+}
+/* Remove arrows from Number fields (Contacts Form) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/* Buttons Styling */
+#sendinfo, #remember, #reset, #addexpense, #showall, #clear{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#info form{
+    padding-left: 65px;
+}
+
+#insert_item {
+    padding-left: 50px;
+}
+
+/* Zebra striping */
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+/* Table Styling */
+#my_table, td, th {
+    margin: auto;
+    border: 1px solid black;
+}
+
+#welcome{
+    padding-left: 250px;
+}
+
+th { background-color: CornflowerBlue ; }
+
+/* Hover over table rows */
+tr:hover { background-color: LemonChiffon ;  }
+
+/* Pseudo Classes (Anchor (a)) */
+#content a:link {  color: blue;  }
+
+/* Visited */
+#content a:visited { color: BlueViolet; }
+
+/* Mouse over */
+#content a:hover { color: Brown ; }
+
+/* Selected link */
+#content a:active { color: #0000FF; }
+/* ####################### END OF CONTENT #################### */
+
+
+
+/* ####################### BEGIN OF FOOTER ####################### */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, 	#00008B, #7B68EE);
+}
+
+/* Footer elements align */
+.footerlist { padding-right: 140px; }
+footer img {  float: right; }
+
+/* List styling */
+footer ol{   margin: 5px;  }
+
+footer li{
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    border-right: 1px solid #006699;
+    padding: 0 .75em;
+    color: white;
+    vertical-align: middle;
+}
+
+footer li:last-child  { border: 0; }
+footer li a{  text-decoration: none;  color: #FFF8DC;  }
+
+/* ####################### END OF FOOTER ####################### */
+
+
+
+
+
+
+
+

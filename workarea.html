@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- Loading my CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font - Staatliches  ///  FIREBASE  ///  Javascript File  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script type="text/javascript" src="js_firebase.js"></script>
+
+    <!-- Page Title -->
+    <title>Workarea - ClearExpense</title>
+</head>
+
+<body>
+
+    <!-- Header part -->
+    <header>
+            <a id="link" href="index.html">
+                <img src="imgs/logo.png" alt="logo">
+            </a>
+
+            <form name ="login" id="loginform" action="#">
+                <p id="welcome">WELCOME ADMIN!</p>
+            </form>
+    </header>
+
+    <!-- Nav part -->
+    <nav id="listcomponents">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+<!-- ####################  Begin of Content part  ####################-->
+    <div id="content">
+        <h2>ClearExpenses - Work Area</h2>
+
+        <form name ="insert_item" id="insert_item" action="#">
+            <fieldset>
+                <legend>Add Expenses:</legend>
+                <p>
+                    Expense: <input type="text" name="expenses" id="expense" />
+                    Cost: <input type="text" name="costs" id="cost" />
+
+                    Category:
+                    <select id="category">
+                        <option value="utilities">Utilities</option>
+                        <option value="supermarket">Supermarket/Groceries</option>
+                        <option value="hangout">Hang Out</option>
+                        <option value="other">Others</option>
+                    </select>
+                </p>
+
+                <input type="button" id="addexpense" value="Add Expense"/>
+                <input type="button" id="showall" value="Show All Expenses"/>
+                <input type="button" id="clear" value="Clear Registries"/>
+            </fieldset>
+        </form>
+
+        <br><br>
+        <table id="my_table">
+
+        </table>
+        <br>
+    </div>
+<!-- #####################  End of Content part  #####################-->
+
+    <!-- Footer part -->
+    <footer>
+        <nav class="footerlist">
+            <ol>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About</a></li>
+            </ol>
+
+            <ol><li>Copyright © 2019 <a href="https://www.linkedin.com/in/brunoillipronti/">Illipronti, Bruno</a></li></ol>
+
+            <ol>
+                <li>Red River College @ 160 Princess St, Winnipeg, MB</li>
+                <li><a href="https://www.google.com/maps/place/Red+River+College+-+The+Roblin+Centre/@49.900184,-97.1436137,17z/data=!3m1!4b1!4m5!3m4!1s0x52ea715dbee06687:0xe064da6c408f4b3b!8m2!3d49.900184!4d-97.141425">
+                    Map
+                    </a>
+                </li>
+            </ol>
+        </nav>
+        <img src="imgs/brunologo.png" alt="bruno">
+    </footer>
+
+</body>
+
+
+</html>

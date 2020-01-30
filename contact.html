@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <!-- Loading my CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font - Staatliches  ///  FIREBASE  ///  Javascript File  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script type="text/javascript" src="js_file.js"></script>
+
+    <!-- Page Title -->
+    <title>ClearExpense Project - Contact us</title>
+</head>
+
+<body>
+
+    <!-- Header part -->
+    <header>
+            <a id="link" href="index.html">
+                <img src="imgs/logo.png" alt="logo">
+            </a>
+
+            <form name ="login" id="loginform" action="#">
+                <label for="login">Login: </label>
+                <input type="text" name="login" id="login" placeholder="Your user..."/>
+                <label for="pw">Password: </label>
+                <input type="password" name="pw" id="pw"   placeholder="Password..."/>
+
+                <input type="button" id="loginbtn" value="Login"/>
+
+                <br>
+                <p id="line">
+                    <p id="usererror">User or password incorrect!</p>
+                    <a id="forgot" href="contact.html">Forgot your password?</a>
+                <p>
+            </form>
+    </header>
+
+    <!-- Nav part -->
+    <nav id="listcomponents">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+<!-- ####################  Begin of Content part  ####################-->
+    <div id="content">
+        <div id="area">
+            <h2>Contact Page</h2>
+
+            <div id="info">
+                <form action="mailto:billipronti@academic.rrc.com" method="GET">
+                        <fieldset>
+                            <legend>Main Info:</legend>
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" class="fields" placeholder="Enter your name here..." />
+                            <p id="name_error">Name is null / or invalid (number). Fix it!</p>
+                            <br>
+
+                            <label for="phone">Phone:</label>
+                            <input type="number" id="phone" class="fields" placeholder="Cel number..."/>
+                            <p id="phone_error">Phone is null. Fix it !</p>
+                            <br>
+
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" class="fields" placeholder="Enter your email here..."/>
+                            <p id="email_error">Email is null. Fix it!</p>
+                            <br>
+
+                            <label for="needs">Tell us your needs:</label>
+                            <textarea placeholder="Enter your individual / company needs..." rows="4" cols="25" id="needs" ></textarea>
+                        </fieldset>
+                        <input type="submit" id="sendinfo" value="Send"/>
+                        <input type="reset"  id="reset"    value="Reset"/>
+                </form>
+
+                <form action="mailto:billipronti@academic.rrc.com" method="GET">
+                    <fieldset>
+                        <legend>Forgot my password:</legend>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email2" class="fields" placeholder="Enter your email here..." autofocus/>
+                        <br>
+                        <input type="submit" id="remember" value="Send password to my email"/>
+                    </fieldset>
+
+                    <!-- Google Maps iframe -->
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=red%20river%20college%20princess&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+<!-- #####################  End of Content part  #####################-->
+
+    <!-- Footer part -->
+    <footer>
+        <nav class="footerlist">
+            <ol>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About</a></li>
+            </ol>
+
+            <ol><li>Copyright © 2019 <a href="https://www.linkedin.com/in/brunoillipronti/">Illipronti, Bruno</a></li></ol>
+
+            <ol>
+                <li>Red River College @ 160 Princess St, Winnipeg, MB</li>
+                <li><a href="https://www.google.com/maps/place/Red+River+College+-+The+Roblin+Centre/@49.900184,-97.1436137,17z/data=!3m1!4b1!4m5!3m4!1s0x52ea715dbee06687:0xe064da6c408f4b3b!8m2!3d49.900184!4d-97.141425">
+                    Map
+                    </a>
+                </li>
+            </ol>
+        </nav>
+        <img src="imgs/brunologo.png" alt="bruno">
+    </footer>
+
+</body>
+
+
+</html>
